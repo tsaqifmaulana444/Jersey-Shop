@@ -6,7 +6,7 @@ const Data1 = require("./models/data1")
 
 
 const dbURI =
-  "mongodb+srv://ali-farid:Saturnuss1@cluster0.ambpbs1.mongodb.net/db1?retryWrites=true&w=majority"
+  "mongodb+srv://ali-farid:#######@cluster0.ambpbs1.mongodb.net/db1?retryWrites=true&w=majority"
 
 mongoose
   .connect(dbURI)
