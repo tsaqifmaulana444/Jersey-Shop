@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+  </head>
+  <body class="overflow-x-hidden bg-gray-100">
+    <%- include('./partials/navbar.ejs') %>
+    <div class="container mx-auto p-5">
+      <h2 class="text-2xl font-bold  my-5">Semua Data Penjualan</h2>
+      <% if (datas.length > 0) { %> <% datas.forEach(data => { %>
+      <div class="bg-white mt-3 p-4 rounded-lg">
+        <h3 class="text-xl"><%= data.title %></h3>
+        <p class="text-gray-700"><%= data.content %></p>
+        <div class="flex mt-3 w-[14vw] justify-between">
+          <a
+            href="/sell/<%= data._id %>"
+            class="block mb-2 font-bold text-blue-400 hover:text-blue-500"
+          >
+            Detail Data
+          </a>
+          <a
+            href="/sell/update/<%= data._id %>"
+            class="block mb-2 font-bold text-green-500 hover:text-green-600"
+          >
+            Ubah Data
+          </a>
+        </div>
+      </div>
+      <% }) %> <% } else { %>
+      <p class="text-gray-700">No data</p>
+      <% } %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

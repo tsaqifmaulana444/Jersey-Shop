@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+  </head>
+  <body class="overflow-x-hidden bg-gray-100">
+    <%- include('./partials/navbar.ejs') %>
+    <div class="flex w-full ml-[5vw] mt-[2vw]">
+      <div class="w-[50vw]">
+        <h3 class="text-4xl mt-[10vh]">Selamat Datang di Laju.</h3>
+        <p class="text-lg mt-[5vh]">
+          Pengelolaan data penjualan yang efisien dan terpercaya adalah kunci
+          keberhasilan bagi bisnis Anda. Kami, PT Laju Abadi, dengan bangga
+          mempersembahkan website "Laju" untuk memenuhi kebutuhan Anda dalam
+          mengelola dan menganalisis data penjualan dengan mudah dan efektif.
+        </p>
+        <p class="text-lg mt-[3vh]">
+          Dengan Laju, Anda akan menemukan solusi lengkap untuk mengoptimalkan
+          proses pengelolaan data penjualan Anda. Dari pencatatan penjualan
+          hingga analisis yang mendalam, platform kami memberikan alat yang kuat
+          dan intuitif untuk membantu Anda mengambil keputusan yang lebih
+          cerdas.
+        </p>
+        <p class="text-sm mt-[1.5vh] text-black-300">
+          Ma Liao - Founder PT Laju Abadi
+        </p>
+      </div>
+      <div class="w-[40vw]">
+        <h1 class="w-fit mx-auto text-9xl mt-[18vh]"><%= count %></h1>
+        <h3 class="w-fit mx-auto mt-[5vh]">Total Data Penjualan, <a href="/sell" class="underline">Kelola Data</a></h3>
+      </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
